@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="MenuItem.js"></script>
+  <script src="drag_functions.js"></script>
+  <script src="onload.js"></script>
+</head>
+<body onload="onload()">
+  <div style="width: 100%; display: table;">
+    <div style="display: table-row">
+
+      <div id="InitialItems" ondrop="removedrop(event)" ondragover="allowDrop(event)" width="336" height="200">
+        <!-- <p class="food-item" id="drag1" draggable="true" ondragstart="drag(event)" width="336" height="69">Lobster</p>
+        <p class="food-item" id="drag2" draggable="true" ondragstart="drag(event)" width="336" height="69">Mashed Potatoes</p>
+        <p class="food-item" id="drag3" draggable="true" ondragstart="drag(event)" width="336" height="69">Roast Beef</p>
+        <p class="food-item" id="drag4" draggable="true" ondragstart="drag(event)" width="336" height="69">Greek Chicken</p> -->
+      </div>
+
+      <div id="MenuItems" ondrop="drop(event)" ondragover="allowDrop(event)" width="336" height="69"></div>
+
+
+       <button onclick="getItemList()">Get Item List</button>
+
+       <p id="itemList"></p>
+     </div>
+ </div>
+</body>
+</html>
