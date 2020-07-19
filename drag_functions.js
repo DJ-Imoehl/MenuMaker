@@ -1,5 +1,5 @@
 var itemList = [];
-
+var selectedMenu;
 function allowDrop(ev) {
   ev.preventDefault();
 }
@@ -15,7 +15,11 @@ function drop(ev) {
   var htmlElementTitle = document.getElementById(data + "-title");
   ev.target.appendChild(htmlElement);
 
+  htmlElementTitle.style.color = selectedMenu.textColor;
+  htmlElementTitle.style.fontSize = selectedMenu.fontSize;
+
   itemList.push(htmlElementTitle.innerHTML);
+  htmlElement.className = "food-item-set";
 }
 
 //TODO: Reorder on drop
@@ -24,6 +28,9 @@ function removedrop(ev) {
   var data = ev.dataTransfer.getData("text/plain");
   var htmlElement= document.getElementById(data);
   var htmlElementTitle = document.getElementById(data + "-title");
+  htmlElementTitle.style.color = "black";
+  htmlElement.className = "food-item";
+
   ev.target.appendChild(htmlElement);
   itemList = itemList.filter(function(item) {
     return item != htmlElementTitle.innerHTML;

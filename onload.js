@@ -23,4 +23,10 @@ function onload(){
     itemList[i].generateElement(initialItems);
   }
 
+  selectedMenu = new Menu("sample-menu.jpg", "20%", "10%",  "Arial", "30px", "#FFA500");
+
+  var menuAreaElement = document.getElementById("MenuArea");
+  menuAreaElement.style.paddingTop = selectedMenu.headerHeight;
+  menuAreaElement.style.paddingLeft = selectedMenu.leftPadding;
+
 }
