@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .food-item{
   width: 90%;
   height: 50px;
@@ -18,28 +23,36 @@
 .food-item-title {
   margin: 2px;
   padding: 2px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
 }
 
 .food-item-desc {
   margin: 2px;
   padding: 2px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
 }
 
 #InitialItems {
   width: 400px;
   height: 70px;
   padding: 10px;
+  margin: 0;
   border: 1px solid #aaaaaa;
   display: table-cell;
 }
 
 #MenuArea {
+  margin: 0;
   width: 1200px;
-  height: 1700px;
+  height: 95vh;
   padding: 10px;
   border: 1px solid #aaaaaa;
   display: table-cell;
   background-image: url(sample-menu.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-color: #dddddd;
 }

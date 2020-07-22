@@ -23,7 +23,7 @@ function onload(){
     itemList[i].generateElement(initialItems);
   }
 
-  selectedMenu = new Menu("sample-menu.jpg", "20%", "10%",  "Arial", "30px", "#FFA500");
+  selectedMenu = new Menu("sample-menu.jpg", "15em", "27em",  "Arial", "30px", "#FFA500");
 
   var menuAreaElement = document.getElementById("MenuArea");
   menuAreaElement.style.paddingTop = selectedMenu.headerHeight;

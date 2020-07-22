@@ -30,6 +30,8 @@ function removedrop(ev) {
   var htmlElementTitle = document.getElementById(data + "-title");
   htmlElementTitle.style.color = "black";
   htmlElement.className = "food-item";
+  htmlElementTitle.style.color = "#000000";
+  htmlElementTitle.style.fontSize = "18px";
 
   ev.target.appendChild(htmlElement);
   itemList = itemList.filter(function(item) {
@@ -48,3 +50,5 @@ function getItemList(){
   }
   para.innerHTML = items;
 }
+
+//TODO need many different hover states to highlight where the new item will go
